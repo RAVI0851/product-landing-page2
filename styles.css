@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;          
+    flex-direction: column; 
+    align-items: center;    
+}
+
+#header {
+    background: #f8f8f8;
+    padding: 20px;
+    text-align: center;     
+}
+
+#header-img {
+    max-width: 100px;      
+    height: auto;          
+    margin-bottom: 10px;   
+}
+
+#nav-bar {
+    margin-top: 10px;
+}
+
+.nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000001;
+    transition: color 0.3s; 
+}
+
+.nav-link:hover {
+    color: blue; 
+    transition: color 0.3s;
+}
+
+#email_sec {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#email {
+    padding: 10px;
+    width: 300px;
+}
+
+#submit {
+    padding: 10px 15px;
+    background: gray;
+    color: white;
+    border: none;
+    transition: background 0.3s; 
+}
+
+#submit:hover {
+    background: blue;
+}
+
+h2 {
+    color: #333;
+    text-align: center;    
+    border-bottom: 2px solid #ccc; 
+    padding-bottom: 10px; 
+}
+
+#features, #how_it_works, #pricing {
+    max-width: 800px;     
+    padding: 20px;        
+    margin: 0 auto;       
+}
+
+#prices {
+    display: flex;                  
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.price-box {
+    background: #f1f1f1;    
+    border-radius: 10px;    
+    padding: 20px;          
+    margin: 10px;           
+    width: 250px;           
+    height: auto;           
+    transition: transform 0.3s; 
+}
+
+.price-box:hover {
+    transform: scale(1.05); 
+}
+
+#footer {
+    text-align: center;
+    padding: 20px;
+    background: #837070;
+    width: 100%;          
+}
+
+#footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: gray;
+}
