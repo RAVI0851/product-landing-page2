@@ -3,78 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Original Guitars</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Movie Search App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header id="header">
-        <img id="header-img" src="https://img.icons8.com/?size=100&id=111559&format=png&color=000000" alt="logo">
-        <nav id="nav-bar">
-            <h1 id="guitar">Original Guitars</h1>
-            <a href="#features" class="nav-link">Features</a>
-            <a href="#how_it_works" class="nav-link">How it works</a>
-            <a href="#pricing" class="nav-link">Pricing</a>
-        </nav>
-    </header>
-
-    <section id="email_sec">
-        <form action="https://www.freecodecamp.com/email-submit" method="GET" id="form">
-            <input id="email" type="email" name="email" placeholder="Enter your email here" required>
-            <input id="submit" type="submit" value="Submit">
-        </form>
-    </section>
-
-    <section id="features">
-        <h2>Premium Materials</h2>
-        <p>Our guitars use the highest quality materials to ensure longevity and excellent sound.</p>
-
-        <h2>Fast Shipping</h2>
-        <p>We guarantee prompt shipping and free returns if you are not satisfied.</p>
-
-        <h2>Quality Assurance</h2>
-        <p>Every purchase undergoes rigorous quality checks to ensure no damages or faults.</p>
-    </section>
-
-    <section id="how_it_works">
-        <h2>How It Works</h2>
-        <iframe width="560" height="315" id="video" src="https://www.youtube.com/embed/kNgpKxHo0H4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </section>
-
-    <section id="pricing">
-        <h2>Pricing</h2>
-        <div id="prices">
-            <div class="price-box" id="100$">
-                <h3>$100 Model</h3>
-                <p>High-quality entry-level guitar.</p>
-                <p>Perfect for beginners.</p>
-                <p>Includes a gig bag.</p>
-                <p>Fast shipping available.</p>
-                <p>Warranty included.</p>
-            </div>
-            <div class="price-box" id="200$">
-                <h3>$200 Model</h3>
-                <p>Mid-range guitar with premium features.</p>
-                <p>Handcrafted design.</p>
-                <p>Available in multiple colors.</p>
-                <p>Includes accessories.</p>
-                <p>Free returns for 30 days.</p>
-            </div>
-            <div class="price-box" id="300$">
-                <h3>$300 Model</h3>
-                <p>Professional-grade guitar.</p>
-                <p>High-quality sound and performance.</p>
-                <p>Customizable options available.</p>
-                <p>Long-term warranty and support.</p>
-                <p>Free shipping on all orders.</p>
-            </div>
-        </div>
-    </section>
-    
-    <footer id="footer">
+<body class="max-w-md mx-auto bg-gray-400 overflow-x-hidden box-border">
+    <div>
+        <h1 class="bg-red-600 text-white font-bold text-2xl text-center p-4 m-4 rounded-md">Movie Search App</h1>
+        <input type="text" placeholder="Enter movie name here" id="input" class="border w-full text-center p-4">
+        <button class="bg-blue-500 w-1/2 md:w-1/2 rounded-full shadow text-center p-4 m-4 font-bold block mx-auto" id="searchBtn">Search</button>
+    </div>
+    <div>
+        <ul id="sec"></ul>
+        <section id="favourites"></section>
+        
+        <h3 class="font-bold text-xl underline">Also search for...</h3>
+        <section id="sec_1" class="fit-content-cover">
+            <img src="https://cdn2.vox-cdn.com/thumbor/Ox5SIQ1A9ypu0hIV-8mEZcnJxG4=/cdn0.vox-cdn.com/uploads/chorus_asset/file/3454496/GOT_S5_-_Poster.0.jpg" alt="game of thrones" class="max-w-full h-auto">
+        </section>
+        <section id="sec_2">
+            <img src="https://image.tmdb.org/t/p/original/55JWKCqNTn54016voGvig52ikjb.jpg" alt="Interstellar" class="max-w-full h-auto">
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer class="bg-blue-500 h-auto m-4 p-4">
+    <div class="w-full bg-blue-500 gap-8 flex underline">
         <a href="#privacy">Privacy</a>
         <a href="#terms">Terms</a>
         <a href="#contact">Contact</a>
-        <p>Copyright © 2016, Original Guitars</p>
-    </footer>
-</body>
+    </div>
+    <div>
+        <p>Copyright  © 2016,  Original  Guitars</p>
+    </div>
+</footer>
 </html>
